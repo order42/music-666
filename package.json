@@ -1,0 +1,19 @@
+{
+  "name": "music-test-order",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint test.spec.music-666*",
+    "test": "mocha test.spec.music-666*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "mocha": "^3.2.0",
+    "pre-commit": "^1.2.2",
+    "webdriverio": "^4.6.2"
+  },
+  "pre-commit": "lint"
+}
