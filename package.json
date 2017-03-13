@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint test.spec.music-666*",
-    "test": "mocha test.spec.music-666*"
+    "test": "mocha --timeout 30000 --slow 30000 test.spec.music-666*"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "eslint": "^3.17.1",
     "mocha": "^3.2.0",
     "pre-commit": "^1.2.2",
+    "selenium-standalone": "^6.0.1",
     "webdriverio": "^4.6.2"
   },
   "pre-commit": "lint"
